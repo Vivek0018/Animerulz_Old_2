@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/demo.css" />
+    <script
+      src="https://cdn.plyr.io/3.6.2/demo.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="video" style="background-color: cyan">
+      <video
+        autoplay
+        controls
+        crossorigin
+        playsinline
+        data-poster="madara-uchiha.webp"
+        id="player"
+      >
+        <source
+          src="https://gogodownload.net/download.php?url=aHR0cHM6LyAdrefsdsdfwerFrefdsfrersfdsrfer363435348AdeqwrwedffryretgsdFrsftrsvfsfsr1YWY4MDJ3aXYxLmdvY2RuYW5pLmNvbS91c2VyMTM0Mi85OTQwZjYzMzE3OTM3NzdjYjA5NzU4OWE3NTIzNDI1NS9FUC4xLnYxLjM2MHAubXA0P3Rva2VuPWtqYVh2aXhsRVpLNTloVVF6SjVObkEmZXhwaXJlcz0xNjcwODc2OTEyJmlkPTE5MzUxOQ=="
+          type="video/webm"
+          size="360"
+        />
+        <source
+          src="https://gogodownload.net/download.php?url=aHR0cHM6LyURASDGHUSRFSJGYfdsffsderFStewthsfSFtrfteAdeqwrwedffryretgsdFrsftrsvfsfsrsdf81YWY4MDJ3aXYxLmdvY2RuYW5pLmNvbS91c2VyMTM0Mi85OTQwZjYzMzE3OTM3NzdjYjA5NzU4OWE3NTIzNDI1NS9FUC4xLnYxLjQ4MHAubXA0P3Rva2VuPVZKbWZ3SHR6R3lZZmV6RmxRYkVGT2cmZXhwaXJlcz0xNjcwODc2OTEyJmlkPTE5MzUxOQ=="
+          type="video/webm"
+        />
+        <track
+          kind="captions"
+          label="English"
+          srclang="en"
+          src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+          default
+        />
+        <track
+          kind="captions"
+          label="Français"
+          srclang="fr"
+          src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt"
+        />
+      </video>
+    </div>
+    <script>
+      var vid = document.getElementById("player");
+      window.addEventListener("loadeddata", function () {
+        alert("video is playing !!! ");
+      });
+    </script>
+  </body>
+</html>
