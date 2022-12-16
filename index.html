@@ -5,15 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script>
+      function play() {
+        var a = document.getElementById("url").value;
+        var video = document.getElementById("player");
+        var play = document.getElementById("play");
+        var h1 = document.getElementsByTagName("h1");
+        video.setAttribute("src", a);
+        if (video[0].paused) {
+          play.click();
+          h1.style.display = block;
+        }
+      }
+    </script>
   </head>
   <body>
-    <video
-      id="player"
-      src="https://gogodownload.net/download.php?url=aHR0cHM6LyURASDGHUSRFSJGYfdsffsderFStewthsfSFtrfteAdeqwrwedffryretgsdFrsftrsvfsfsrsdf81YWY4MDJ3aXYxLmdvY2RuYW5pLmNvbS91c2VyMTM0Mi85OTQwZjYzMzE3OTM3NzdjYjA5NzU4OWE3NTIzNDI1NS9FUC4xLnYxLjQ4MHAubXA0P3Rva2VuPVZKbWZ3SHR6R3lZZmV6RmxRYkVGT2cmZXhwaXJlcz0xNjcwODc2OTEyJmlkPTE5MzUxOQ=="
-      type="video/webm"
-      controls
-    ></video>
-    <video id="player" src="sample.mkv" type="video/webm" controls></video>
+    <h1 font-size="300px" style="display: none">VIDEO</h1>
+    <center>
+      <span>Enter the url : </span>
+      <input type="text" id="url" />
+      <button onclick="play()" id="play">Play</button><br />
+      <video
+        controls="controls"
+        src=""
+        autoplay="autoplay"
+        loop="loop"
+        id="player"
+        type="video/webm"
+        tabindex="0"
+        width="100%"
+      ></video>
+    </center>
+    <script>
+      var video = document.getElementById("player");
+      video.addEventListener("playing", function () {
+        $("#output").html("Playing event triggered");
+      });
+    </script>
   </body>
 </html>
-
