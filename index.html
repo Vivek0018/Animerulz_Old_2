@@ -318,7 +318,7 @@
         </div>
       </div>
     </div>
-    <div class="addthis_inline_share_toolbox">
+    <div class="addthis_inline_share_toolbox" id="addthis" style="display: none;">
       <img
         class="image-at-share"
         src="images/HD-wallpaper-naruto-uzumaki-removebg-preview.png"
@@ -499,6 +499,7 @@
       var loader = document.getElementById("preloader");
               window.addEventListener("load", function(){      
                 loader.style.display = "none";
+                document.getElementById("addthis").style.display = "block";
               });
     </script>
     </div>
