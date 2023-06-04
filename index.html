@@ -31,9 +31,28 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 <body>
-  <!-- <div class="preloader" id="preloader">
+  <!-- <div class="preloader" id="preloader" style="display: none;">
     <div class="preloader-img">  
   </div> -->
+  <div class="new-preloader">
+  <div class="wrapper">
+   <div class="box-wrap">
+     <div class="box one"></div>
+     <div class="box two"></div>
+     <div class="box three"></div>
+     <div class="box four"></div>
+     <div class="box five"></div>
+     <div class="box six"></div>
+   </div>
+   <div class="wrapper-text">Animerulz</div>
+ </div>
+ </div>
+  <script>
+   setTimeout(newPreloader,4000);
+   function newPreloader(){
+      document.getElementsByClassName("new-preloader")[0].style.display = "none";
+   }
+  </script>
   <div class="main">
     <nav class="nav-bar" id="nav-bar-id">
         <img src="https://vivek0018.github.io/Files.Animerulz/images/Animerulzlogo.webp" class="nav-image" alt="Animerulz">  
