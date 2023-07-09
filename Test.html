@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Simple animated slider with Swiper.js and GSAP TweenMax</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<!-- <link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet"> -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<script>!function(e){"undefined"==typeof module?this.charming=e:module.exports=e}(function(e,n){"use strict";n=n||{};var t=n.tagName||"span",o=null!=n.classPrefix?n.classPrefix:"char",r=1,a=function(e){for(var n=e.parentNode,a=e.nodeValue,c=a.length,l=-1;++l<c;){var d=document.createElement(t);o&&(d.className=o+r,r++),d.appendChild(document.createTextNode(a[l])),n.insertBefore(d,e)}n.removeChild(e)};return function c(e){for(var n=[].slice.call(e.childNodes),t=n.length,o=-1;++o<t;)c(n[o]);e.nodeType===Node.TEXT_NODE&&a(e)}(e),e});
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css'>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section>
+  <div class="slider">
+  <div class="swiper-container slideshow">
+    
+    <div class="swiper-wrapper">
+        <div class="swiper-slide slide">
+        <div class="slide-image" style="background-image:url(https://vivek0018.github.io/Files.Animerulz/images/Jujutsu_Kaisen_season_2.webp)"></div>
+        <div class="slide-image-dup"></div>
+        <div class="slide-image-dup-2"></div>
+        <div class="slide-container">
+          <span class="slide-spotlight-txt small-text-on-slider slide-title">#1 Spotlight</span>
+          <h2>Jujutsu Kaisen Season 2</h2>
+          <div class="slide-more-info">
+             <ul class="small-text-on-slider">
+                <li class="slide-list-ele">T.V Series</li>
+                <li class="slide-list-ele">24min</li>
+                <li class="slide-list-ele">Episode-1</li>
+             </ul>
+          </div>
+          <div class="slide-anime-des"><span>The <strong>past</strong> comes to light when second-year students Satoru Gojou and Suguru Getou are tasked with escorting young Riko Amanai to Master Tengen. But when a non-sorcerer user tries to kill them, their mission to protect the <strong>Star Plasma Vessel</strong> threatens to turn them into bitter enemies and cement their destinies—one as the world’s <em>strongest sorcerer</em>, and the other its most twisted curse user!</span></div>
+          <div class="slide-btns">
+             <a role="button" rel="next" title="Watch OnePiece" class="slide-btn watch-now-btn" href="/JujutsuKaisenSeason2/Watch-Now/?ep=1&aud=jap">
+                <svg xmlns="http://www.w3.org/2000/svg" class="play-svg" enable-background="new 0 0 100 100" viewBox="0 0 100 100">
+                   <switch>
+                      <g>
+                         <path d="M5273.1,2400.1v-2c0-2.8-5-4-9.7-4s-9.7,1.3-9.7,4v2c0,1.8,0.7,3.6,2,4.9l5,4.9c0.3,0.3,0.4,0.6,0.4,1v6.4c0,0.4,0.2,0.7,0.6,0.8l2.9,0.9c0.5,0.1,1-0.2,1-0.8v-7.2c0-0.4,0.2-0.7,0.4-1l5.1-5C5272.4,2403.7,5273.1,2401.9,5273.1,2400.1zM5263.4,2400c-4.8,0-7.4-1.3-7.5-1.8v0c0.1-0.5,2.7-1.8,7.5-1.8c4.8,0,7.3,1.3,7.5,1.8C5270.7,2398.7,5268.2,2400,5263.4,2400z"/>
+                         <path d="M5268.4 2410.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1 0-.6-.4-1-1-1H5268.4zM5272.7 2413.7h-4.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1C5273.7 2414.1 5273.3 2413.7 5272.7 2413.7zM5272.7 2417h-4.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1C5273.7 2417.5 5273.3 2417 5272.7 2417zM50 2.5C23.8 2.5 2.5 23.8 2.5 50c0 26.2 21.3 47.5 47.5 47.5 26.2 0 47.5-21.3 47.5-47.5C97.5 23.8 76.2 2.5 50 2.5zM67.2 52.8L41.6 69.8c-2.2 1.5-5.1-.1-5.1-2.8V32.9c0-2.6 2.9-4.2 5.1-2.8l25.6 17.1C69.2 48.6 69.2 51.4 67.2 52.8z"/>
+                      </g>
+                   </switch>
+                </svg>
+                Watch Now
+               </a>
+             <a role="button" rel="next" title="OnePiece" class="slide-btn details-btn" href="/JujutsuKaisenSeason2/">
+                Details
+                <svg class="svg-icon-on-slide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,0.8)" id="left-arrow">
+                   <path d="m8.5 12.8 5.7 5.6c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4l-4.9-5 4.9-5c.4-.4.4-1 0-1.4-.2-.2-.4-.3-.7-.3-.3 0-.5.1-.7.3l-5.7 5.6c-.4.5-.4 1.1 0 1.6 0-.1 0-.1 0 0z"></path>
+                </svg>
+               </a>
+          </div>
+          <div class="updated-time-on-slide">
+             <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-clk-on-slider" fill="rgba(255,255,255,0.7)" viewBox="0 0 512 512">
+                <path d="M256 512C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256s-114.6 256-256 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+             </svg>
+             <span class="small-text-on-slider">Updated on 06/07/2023</span>
+          </div>
+       </div>
+      </div>
+      <div class="swiper-slide slide">
+        <div class="slide-image" style="background-image:url(https://vivek0018.github.io/Files.Animerulz/images/BlackClover.webp)"></div>
+        <div class="slide-image-dup"></div>
+        <div class="slide-image-dup-2"></div>
+        <div class="slide-container">
+          <span class="slide-spotlight-txt small-text-on-slider slide-title">#2 Spotlight</span>
+          <h2>Black Clover Sword of the Wizard King</h2>
+          <div class="slide-more-info">
+             <ul class="small-text-on-slider">
+                <li class="slide-list-ele">Movie</li>
+                <li class="slide-list-ele">Hindi Dub Available</li>
+                <li class="slide-list-ele">110min</li>
+             </ul>
+          </div>
+          <div class="slide-anime-des"><span> &nbsp;In a world where <strong>magic</strong> is everything, <strong>Asta</strong> and <strong>Yuno</strong> are both found abandoned at a church on the same day. While Yuno is gifted with exceptional <strong>magical powers</strong>, Asta is the only one in this world without any. At the age of fifteen, both receive <strong>grimoires</strong>, magic books that amplify their holder’s magic. Asta’s is a rare Grimoire of <strong>Anti-Magic</strong> that negates and repels his opponent’s spells. Being opposite but good <strong>rivals</strong>, Yuno and Asta are ready for the hardest of challenges to achieve their common dream: to be the <strong>Wizard King</strong>. Giving up is never an option!
+           As a lionhearted boy who can’t wield magic strives for the title of Wizard King, four banished Wizard Kings of yore return to crush the Clover Kingdom.<strong>Gold Roger</strong> was known as the <strong>Pirate King</strong>, the strongest and most infamous being to have sailed the <strong>Grand Line</strong>. The <strong>capture and death of Roger</strong> by the <strong>World Government</strong> brought a change throughout the <strong>world</strong>. His last words before his death revealed the location of the <strong>greatest treasure in the world</strong>, <strong>One Piece</strong>. It was this revelation that brought about the <strong>Grand Age of Pirates</strong>, men who dreamed of finding <strong>One Piece</strong> (which promises an unlimited amount of <strong>riches and fame</strong>), and quite possibly the most coveted of titles for the person who found it, the title of the <strong>Pirate King</strong>.</span></div>
+          <div class="slide-btns">
+             <a role="button" rel="next" title="Watch OnePiece" class="slide-btn watch-now-btn" href="/BlackCloverSwordoftheWizardKing/Watch-Now/?ep=1&aud=eng">
+                <svg xmlns="http://www.w3.org/2000/svg" class="play-svg" enable-background="new 0 0 100 100" viewBox="0 0 100 100">
+                   <switch>
+                      <g>
+                         <path d="M5273.1,2400.1v-2c0-2.8-5-4-9.7-4s-9.7,1.3-9.7,4v2c0,1.8,0.7,3.6,2,4.9l5,4.9c0.3,0.3,0.4,0.6,0.4,1v6.4c0,0.4,0.2,0.7,0.6,0.8l2.9,0.9c0.5,0.1,1-0.2,1-0.8v-7.2c0-0.4,0.2-0.7,0.4-1l5.1-5C5272.4,2403.7,5273.1,2401.9,5273.1,2400.1zM5263.4,2400c-4.8,0-7.4-1.3-7.5-1.8v0c0.1-0.5,2.7-1.8,7.5-1.8c4.8,0,7.3,1.3,7.5,1.8C5270.7,2398.7,5268.2,2400,5263.4,2400z"/>
+                         <path d="M5268.4 2410.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1 0-.6-.4-1-1-1H5268.4zM5272.7 2413.7h-4.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1C5273.7 2414.1 5273.3 2413.7 5272.7 2413.7zM5272.7 2417h-4.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1C5273.7 2417.5 5273.3 2417 5272.7 2417zM50 2.5C23.8 2.5 2.5 23.8 2.5 50c0 26.2 21.3 47.5 47.5 47.5 26.2 0 47.5-21.3 47.5-47.5C97.5 23.8 76.2 2.5 50 2.5zM67.2 52.8L41.6 69.8c-2.2 1.5-5.1-.1-5.1-2.8V32.9c0-2.6 2.9-4.2 5.1-2.8l25.6 17.1C69.2 48.6 69.2 51.4 67.2 52.8z"/>
+                      </g>
+                   </switch>
+                </svg>
+                Watch Now
+               </a>
+             <a role="button" rel="next" title="OnePiece" class="slide-btn details-btn" href="/BlackCloverSwordoftheWizardKing">
+                Details
+                <svg class="svg-icon-on-slide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,0.8)" id="left-arrow">
+                   <path d="m8.5 12.8 5.7 5.6c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4l-4.9-5 4.9-5c.4-.4.4-1 0-1.4-.2-.2-.4-.3-.7-.3-.3 0-.5.1-.7.3l-5.7 5.6c-.4.5-.4 1.1 0 1.6 0-.1 0-.1 0 0z"></path>
+                </svg>
+               </a>
+          </div>
+          <div class="updated-time-on-slide">
+             <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-clk-on-slider" fill="rgba(255,255,255,0.7)" viewBox="0 0 512 512">
+                <path d="M256 512C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256s-114.6 256-256 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+             </svg>
+             <span class="small-text-on-slider">Updated on 16/06/2023</span>
+          </div>
+       </div>
+      </div>
+      <div class="swiper-slide slide">
+        <div class="slide-image" style="background-image: url(https://vivek0018.github.io/Files.Animerulz/images/BleachTYBWSeason2.webp) "></div>
+        <div class="slide-image-dup"></div>
+        <div class="slide-image-dup-2"></div>
+          <!-- <img src="" class="img-in-slide" alt="One Piece"/> -->
+          <div class="slide-container">
+             <span class="slide-spotlight-txt small-text-on-slider slide-title">#3 Spotlight</span>
+             <h2>Bleach TYBW Season 2</h2>
+             <div class="slide-more-info">
+                <ul class="small-text-on-slider">
+                   <li class="slide-list-ele">T.V Series</li>
+                   <li class="slide-list-ele">24min</li>
+                   <li class="slide-list-ele">Episode-1</li>
+                </ul>
+             </div>
+             <div class="slide-anime-des"><span> The <strong>past</strong> comes to light when second-year students Satoru Gojou and Suguru Getou are tasked with escorting young Riko Amanai to Master Tengen. But when a non-sorcerer user tries to kill them, their mission to protect the <strong>Star Plasma Vessel</strong> threatens to turn them into bitter enemies and cement their destinies—one as the world’s <em>strongest sorcerer</em>, and the other its most twisted curse user!</span></div>
+             <div class="slide-btns">
+                <a role="button" rel="next" title="Watch OnePiece" class="slide-btn watch-now-btn" href="/BleachTYBWSeason2/Watch-Now/?ep=1&aud=jap">
+                   <svg xmlns="http://www.w3.org/2000/svg" class="play-svg" enable-background="new 0 0 100 100" viewBox="0 0 100 100">
+                      <switch>
+                         <g>
+                            <path d="M5273.1,2400.1v-2c0-2.8-5-4-9.7-4s-9.7,1.3-9.7,4v2c0,1.8,0.7,3.6,2,4.9l5,4.9c0.3,0.3,0.4,0.6,0.4,1v6.4c0,0.4,0.2,0.7,0.6,0.8l2.9,0.9c0.5,0.1,1-0.2,1-0.8v-7.2c0-0.4,0.2-0.7,0.4-1l5.1-5C5272.4,2403.7,5273.1,2401.9,5273.1,2400.1zM5263.4,2400c-4.8,0-7.4-1.3-7.5-1.8v0c0.1-0.5,2.7-1.8,7.5-1.8c4.8,0,7.3,1.3,7.5,1.8C5270.7,2398.7,5268.2,2400,5263.4,2400z"/>
+                            <path d="M5268.4 2410.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1 0-.6-.4-1-1-1H5268.4zM5272.7 2413.7h-4.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1C5273.7 2414.1 5273.3 2413.7 5272.7 2413.7zM5272.7 2417h-4.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1C5273.7 2417.5 5273.3 2417 5272.7 2417zM50 2.5C23.8 2.5 2.5 23.8 2.5 50c0 26.2 21.3 47.5 47.5 47.5 26.2 0 47.5-21.3 47.5-47.5C97.5 23.8 76.2 2.5 50 2.5zM67.2 52.8L41.6 69.8c-2.2 1.5-5.1-.1-5.1-2.8V32.9c0-2.6 2.9-4.2 5.1-2.8l25.6 17.1C69.2 48.6 69.2 51.4 67.2 52.8z"/>
+                         </g>
+                      </switch>
+                   </svg>
+                   Watch Now
+                  </a>
+                <a role="button" rel="next" title="OnePiece" class="slide-btn details-btn" href="/BleachTYBWSeason2/">
+                   Details
+                   <svg class="svg-icon-on-slide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,0.8)" id="left-arrow">
+                      <path d="m8.5 12.8 5.7 5.6c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4l-4.9-5 4.9-5c.4-.4.4-1 0-1.4-.2-.2-.4-.3-.7-.3-.3 0-.5.1-.7.3l-5.7 5.6c-.4.5-.4 1.1 0 1.6 0-.1 0-.1 0 0z"></path>
+                   </svg>
+                  </a>
+             </div>
+             <div class="updated-time-on-slide">
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-clk-on-slider" fill="rgba(255,255,255,0.7)" viewBox="0 0 512 512">
+                   <path d="M256 512C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256s-114.6 256-256 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+                </svg>
+                <span class="small-text-on-slider">Updated on 08/07/2023</span>
+             </div>
+      </div>
+      </div>  
+      <div class="swiper-slide slide">
+        <div class="slide-image" style="background-image: url(https://vivek0018.github.io/Files.Animerulz/images/OnePiece.webp) "></div>
+        <div class="slide-image-dup"></div>
+        <div class="slide-image-dup-2"></div>
+        <div class="slide-container">
+          <span class="slide-spotlight-txt small-text-on-slider slide-title">#4 Spotlight</span>
+          <h2>One Piece</h2>
+          <div class="slide-more-info">
+             <ul class="small-text-on-slider">
+                <li class="slide-list-ele">T.V Series</li>
+                <li class="slide-list-ele">24min</li>
+                <li class="slide-list-ele">1067 Episodes</li>
+             </ul>
+          </div>
+          <div class="slide-anime-des"><span><strong>Gold Roger</strong> was known as the <strong>Pirate King</strong>, the strongest and most infamous being to have sailed the <strong>Grand Line</strong>. The <strong>capture and death of Roger</strong> by the <strong>World Government</strong> brought a change throughout the <strong>world</strong>. His last words before his death revealed the location of the <strong>greatest treasure in the world</strong>, <strong>One Piece</strong>. It was this revelation that brought about the <strong>Grand Age of Pirates</strong>, men who dreamed of finding <strong>One Piece</strong> (which promises an unlimited amount of <strong>riches and fame</strong>), and quite possibly the most coveted of titles for the person who found it, the title of the <strong>Pirate King</strong>.</span></div>
+          <div class="slide-btns">
+             <a role="button" rel="next" title="Watch OnePiece" class="slide-btn watch-now-btn" href="/OnePiece/Watch-Now/?ep=1067&aud=jap">
+                <svg xmlns="http://www.w3.org/2000/svg" class="play-svg" enable-background="new 0 0 100 100" viewBox="0 0 100 100">
+                   <switch>
+                      <g>
+                         <path d="M5273.1,2400.1v-2c0-2.8-5-4-9.7-4s-9.7,1.3-9.7,4v2c0,1.8,0.7,3.6,2,4.9l5,4.9c0.3,0.3,0.4,0.6,0.4,1v6.4c0,0.4,0.2,0.7,0.6,0.8l2.9,0.9c0.5,0.1,1-0.2,1-0.8v-7.2c0-0.4,0.2-0.7,0.4-1l5.1-5C5272.4,2403.7,5273.1,2401.9,5273.1,2400.1zM5263.4,2400c-4.8,0-7.4-1.3-7.5-1.8v0c0.1-0.5,2.7-1.8,7.5-1.8c4.8,0,7.3,1.3,7.5,1.8C5270.7,2398.7,5268.2,2400,5263.4,2400z"/>
+                         <path d="M5268.4 2410.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1 0-.6-.4-1-1-1H5268.4zM5272.7 2413.7h-4.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1C5273.7 2414.1 5273.3 2413.7 5272.7 2413.7zM5272.7 2417h-4.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1C5273.7 2417.5 5273.3 2417 5272.7 2417zM50 2.5C23.8 2.5 2.5 23.8 2.5 50c0 26.2 21.3 47.5 47.5 47.5 26.2 0 47.5-21.3 47.5-47.5C97.5 23.8 76.2 2.5 50 2.5zM67.2 52.8L41.6 69.8c-2.2 1.5-5.1-.1-5.1-2.8V32.9c0-2.6 2.9-4.2 5.1-2.8l25.6 17.1C69.2 48.6 69.2 51.4 67.2 52.8z"/>
+                      </g>
+                   </switch>
+                </svg>
+                Watch Now
+               </a>
+             <a role="button" rel="next" title="OnePiece" class="slide-btn details-btn" href="/OnePiece/">
+                Details
+                <svg class="svg-icon-on-slide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,0.8)" id="left-arrow">
+                   <path d="m8.5 12.8 5.7 5.6c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4l-4.9-5 4.9-5c.4-.4.4-1 0-1.4-.2-.2-.4-.3-.7-.3-.3 0-.5.1-.7.3l-5.7 5.6c-.4.5-.4 1.1 0 1.6 0-.1 0-.1 0 0z"></path>
+                </svg>
+               </a>
+          </div>
+          <div class="updated-time-on-slide">
+             <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-clk-on-slider" fill="rgba(255,255,255,0.7)" viewBox="0 0 512 512">
+                <path d="M256 512C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256s-114.6 256-256 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+             </svg>
+             <span class="small-text-on-slider">Updated on 02/07/2023</span>
+          </div>
+       </div>
+      </div>
+      <div class="swiper-slide slide">
+        <div class="slide-image" style="background-image: url(https://vivek0018.github.io/Files.Animerulz/images/HellsParadise.webp) "></div>
+        <div class="slide-image-dup"></div>
+        <div class="slide-image-dup-2"></div>
+        <div class="slide-container">
+          <span class="slide-spotlight-txt small-text-on-slider slide-title">#5 Spotlight</span>
+          <h2>Hells paradise</h2>
+          <div class="slide-more-info">
+             <ul class="small-text-on-slider">
+                <li class="slide-list-ele">T.V Series</li>
+                <li class="slide-list-ele">24min</li>
+                <li class="slide-list-ele">12 Episodes</li>
+             </ul>
+          </div>
+          <div class="slide-anime-des"><span>The Edo period is nearing its end. Gabimaru, a shinobi formerly known as the strongest in Iwagakure who is now a death row convict, is told that he will be acquitted and set free if he can bring back the Elixir of Life from an island that is rumored to be the Buddhist pure land Sukhavati. In hopes of reuniting with his beloved wife, Gabimaru heads to the island along with the executioner Yamada Asaemon Sagiri. Upon arriving there, they encounter other death row convicts in search of the Elixir of Life... as well as a host of unknown creatures, eerie manmade statues, and the hermits who rule the island. Can Gabimaru find the Elixir of Life on this mysterious island and make it back home alive?</span></div>
+          <div class="slide-btns">
+             <a role="button" rel="next" title="Watch Hell'sParadise" class="slide-btn watch-now-btn" href="/HellsParadise/Watch-Now/?ep=12&aud=eng">
+                <svg xmlns="http://www.w3.org/2000/svg" class="play-svg" enable-background="new 0 0 100 100" viewBox="0 0 100 100">
+                   <switch>
+                      <g>
+                         <path d="M5273.1,2400.1v-2c0-2.8-5-4-9.7-4s-9.7,1.3-9.7,4v2c0,1.8,0.7,3.6,2,4.9l5,4.9c0.3,0.3,0.4,0.6,0.4,1v6.4c0,0.4,0.2,0.7,0.6,0.8l2.9,0.9c0.5,0.1,1-0.2,1-0.8v-7.2c0-0.4,0.2-0.7,0.4-1l5.1-5C5272.4,2403.7,5273.1,2401.9,5273.1,2400.1zM5263.4,2400c-4.8,0-7.4-1.3-7.5-1.8v0c0.1-0.5,2.7-1.8,7.5-1.8c4.8,0,7.3,1.3,7.5,1.8C5270.7,2398.7,5268.2,2400,5263.4,2400z"/>
+                         <path d="M5268.4 2410.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1 0-.6-.4-1-1-1H5268.4zM5272.7 2413.7h-4.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1C5273.7 2414.1 5273.3 2413.7 5272.7 2413.7zM5272.7 2417h-4.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1C5273.7 2417.5 5273.3 2417 5272.7 2417zM50 2.5C23.8 2.5 2.5 23.8 2.5 50c0 26.2 21.3 47.5 47.5 47.5 26.2 0 47.5-21.3 47.5-47.5C97.5 23.8 76.2 2.5 50 2.5zM67.2 52.8L41.6 69.8c-2.2 1.5-5.1-.1-5.1-2.8V32.9c0-2.6 2.9-4.2 5.1-2.8l25.6 17.1C69.2 48.6 69.2 51.4 67.2 52.8z"/>
+                      </g>
+                   </switch>
+                </svg>
+                Watch Now
+               </a>
+             <a role="button" rel="next" title="Hell'sParadise" class="slide-btn details-btn" href="/HellsParadise/">
+                Details
+                <svg class="svg-icon-on-slide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,0.8)" id="left-arrow">
+                   <path d="m8.5 12.8 5.7 5.6c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4l-4.9-5 4.9-5c.4-.4.4-1 0-1.4-.2-.2-.4-.3-.7-.3-.3 0-.5.1-.7.3l-5.7 5.6c-.4.5-.4 1.1 0 1.6 0-.1 0-.1 0 0z"></path>
+                </svg>
+               </a>
+          </div>
+          <div class="updated-time-on-slide">
+             <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-clk-on-slider" fill="rgba(255,255,255,0.7)" viewBox="0 0 512 512">
+                <path d="M256 512C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256s-114.6 256-256 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+             </svg>
+             <span class="small-text-on-slider">Updated on 25/06/2023</span>
+          </div>
+       </div>
+      </div>
+      <div class="swiper-slide slide">
+        <div class="slide-image" style="background-image: url(https://vivek0018.github.io/Files.Animerulz/images/DemonSlayer.webp) "></div>
+        <div class="slide-image-dup"></div>
+        <div class="slide-image-dup-2"></div>
+        <div class="slide-container">
+          <span class="slide-spotlight-txt small-text-on-slider slide-title">#6 Spotlight</span>
+          <h2>Demon Slayer Swordsmith Village Arc</h2>
+          <div class="slide-more-info">
+             <ul class="small-text-on-slider">
+                <li class="slide-list-ele">T.V Series</li>
+                <li class="slide-list-ele">24min</li>
+                <li class="slide-list-ele">11 Episodes</li>
+             </ul>
+          </div>
+          <div class="slide-anime-des"><span>It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.</span></div>
+          <div class="slide-btns">
+             <a role="button" rel="next" title="Watch Demon Slayer Swordsmith Village Arc" class="slide-btn watch-now-btn" href="/DemonSlayerSwordsmithVillageArc/Watch-Now/?ep=11&aud=eng">
+                <svg xmlns="http://www.w3.org/2000/svg" class="play-svg" enable-background="new 0 0 100 100" viewBox="0 0 100 100">
+                   <switch>
+                      <g>
+                         <path d="M5273.1,2400.1v-2c0-2.8-5-4-9.7-4s-9.7,1.3-9.7,4v2c0,1.8,0.7,3.6,2,4.9l5,4.9c0.3,0.3,0.4,0.6,0.4,1v6.4c0,0.4,0.2,0.7,0.6,0.8l2.9,0.9c0.5,0.1,1-0.2,1-0.8v-7.2c0-0.4,0.2-0.7,0.4-1l5.1-5C5272.4,2403.7,5273.1,2401.9,5273.1,2400.1zM5263.4,2400c-4.8,0-7.4-1.3-7.5-1.8v0c0.1-0.5,2.7-1.8,7.5-1.8c4.8,0,7.3,1.3,7.5,1.8C5270.7,2398.7,5268.2,2400,5263.4,2400z"/>
+                         <path d="M5268.4 2410.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1 0-.6-.4-1-1-1H5268.4zM5272.7 2413.7h-4.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1C5273.7 2414.1 5273.3 2413.7 5272.7 2413.7zM5272.7 2417h-4.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1C5273.7 2417.5 5273.3 2417 5272.7 2417zM50 2.5C23.8 2.5 2.5 23.8 2.5 50c0 26.2 21.3 47.5 47.5 47.5 26.2 0 47.5-21.3 47.5-47.5C97.5 23.8 76.2 2.5 50 2.5zM67.2 52.8L41.6 69.8c-2.2 1.5-5.1-.1-5.1-2.8V32.9c0-2.6 2.9-4.2 5.1-2.8l25.6 17.1C69.2 48.6 69.2 51.4 67.2 52.8z"/>
+                      </g>
+                   </switch>
+                </svg>
+                Watch Now
+              </a>
+             <a role="button" rel="next" title="DemonSlayer Swordsmith Village Arc" class="slide-btn details-btn" href="/DemonSlayerSwordsmithVillageArc/">
+                Details
+                <svg class="svg-icon-on-slide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,0.8)" id="left-arrow">
+                   <path d="m8.5 12.8 5.7 5.6c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4l-4.9-5 4.9-5c.4-.4.4-1 0-1.4-.2-.2-.4-.3-.7-.3-.3 0-.5.1-.7.3l-5.7 5.6c-.4.5-.4 1.1 0 1.6 0-.1 0-.1 0 0z"></path>
+                </svg>
+              </a>
+          </div>
+          <div class="updated-time-on-slide">
+             <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-clk-on-slider" fill="rgba(255,255,255,0.7)" viewBox="0 0 512 512">
+                <path d="M256 512C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256s-114.6 256-256 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+             </svg>
+             <span class="small-text-on-slider">Updated on 11/06/2023</span>
+          </div>
+       </div>
+      </div>
+      <div class="swiper-slide slide">
+        <div class="slide-image" style="background-image: url(https://vivek0018.github.io/Files.Animerulz/images/Naruto.webp) "></div>
+        <div class="slide-image-dup"></div>
+        <div class="slide-image-dup-2"></div>
+        <div class="slide-container">
+          <span class="slide-spotlight-txt small-text-on-slider slide-title">#7 Spotlight</span>
+          <h2>Naruto</h2>
+          <div class="slide-more-info">
+             <ul class="small-text-on-slider">
+                <li class="slide-list-ele">T.V Series</li>
+                <li class="slide-list-ele">24min</li>
+                <li class="slide-list-ele">220 Episodes</li>
+             </ul>
+          </div>
+          <div class="slide-anime-des"><span>Naruto Uzumaki, a hyperactive and knuckle-headed ninja, lives in Konohagakure, the Hidden Leaf village. Moments prior to his birth, a huge demon known as the Kyuubi, the Nine-tailed Fox, attacked Konohagakure and wreaked havoc. In order to put an end to the Kyuubi's rampage, the leader of the village, the 4th Hokage, sacrificed his life and sealed the monstrous beast inside the newborn Naruto.</span></div>
+          <div class="slide-btns">
+             <a role="button" rel="next" title="Watch Naruto" class="slide-btn watch-now-btn" href="/Naruto/Watch-Now/?ep=1&aud=eng" rel="next"> 
+                <svg xmlns="http://www.w3.org/2000/svg" class="play-svg" enable-background="new 0 0 100 100" viewBox="0 0 100 100">
+                   <switch>
+                      <g>
+                         <path d="M5273.1,2400.1v-2c0-2.8-5-4-9.7-4s-9.7,1.3-9.7,4v2c0,1.8,0.7,3.6,2,4.9l5,4.9c0.3,0.3,0.4,0.6,0.4,1v6.4c0,0.4,0.2,0.7,0.6,0.8l2.9,0.9c0.5,0.1,1-0.2,1-0.8v-7.2c0-0.4,0.2-0.7,0.4-1l5.1-5C5272.4,2403.7,5273.1,2401.9,5273.1,2400.1zM5263.4,2400c-4.8,0-7.4-1.3-7.5-1.8v0c0.1-0.5,2.7-1.8,7.5-1.8c4.8,0,7.3,1.3,7.5,1.8C5270.7,2398.7,5268.2,2400,5263.4,2400z"/>
+                         <path d="M5268.4 2410.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1 0-.6-.4-1-1-1H5268.4zM5272.7 2413.7h-4.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1C5273.7 2414.1 5273.3 2413.7 5272.7 2413.7zM5272.7 2417h-4.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1C5273.7 2417.5 5273.3 2417 5272.7 2417zM50 2.5C23.8 2.5 2.5 23.8 2.5 50c0 26.2 21.3 47.5 47.5 47.5 26.2 0 47.5-21.3 47.5-47.5C97.5 23.8 76.2 2.5 50 2.5zM67.2 52.8L41.6 69.8c-2.2 1.5-5.1-.1-5.1-2.8V32.9c0-2.6 2.9-4.2 5.1-2.8l25.6 17.1C69.2 48.6 69.2 51.4 67.2 52.8z"/>
+                      </g>
+                   </switch>
+                </svg>
+                Watch Now
+              </a>
+             <a role="button" rel="next" title="Naruto" class="slide-btn details-btn" href="/Naruto/">
+                Details
+                <svg class="svg-icon-on-slide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,0.8)" id="left-arrow">
+                   <path d="m8.5 12.8 5.7 5.6c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4l-4.9-5 4.9-5c.4-.4.4-1 0-1.4-.2-.2-.4-.3-.7-.3-.3 0-.5.1-.7.3l-5.7 5.6c-.4.5-.4 1.1 0 1.6 0-.1 0-.1 0 0z"></path>
+                </svg>
+              </a>
+          </div>
+          <div class="updated-time-on-slide">
+             <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-clk-on-slider" fill="rgba(255,255,255,0.7)" viewBox="0 0 512 512">
+                <path d="M256 512C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256s-114.6 256-256 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+             </svg>
+             <span class="small-text-on-slider">Updated on 25/05/2023</span>
+          </div>
+       </div>
+      </div>
+      <div class="swiper-slide slide">
+        <div class="slide-image" style="background-image: url(https://vivek0018.github.io/Files.Animerulz/images/DrStoneNewWorld.webp) "></div>
+        <div class="slide-image-dup"></div>
+        <div class="slide-image-dup-2"></div>
+        <div class="slide-container">
+          <span class="slide-spotlight-txt small-text-on-slider slide-title">#8 Spotlight</span>
+          <h2>Dr Stone New World</h2>
+          <div class="slide-more-info">
+             <ul class="small-text-on-slider">
+                <li class="slide-list-ele">T.V Series</li>
+                <li class="slide-list-ele">24min</li>
+                <li class="slide-list-ele">11 Episodes</li>
+             </ul>
+          </div>
+          <div class="slide-anime-des"><span>After five years of harboring unspoken feelings, high-schooler Taiju Ooki is finally ready to confess his love to Yuzuriha Ogawa. Just when Taiju begins his confession however, a blinding green light strikes the Earth and petrifies mankind around the world— turning every single human into stone.Several millennia later, Taiju awakens to find the modern world completely nonexistent, as nature has flourished in the years humanity stood still. Among a stone world of statues, Taiju encounters one other living human: his science-loving friend Senkuu, who has been active for a few months. Taiju learns that Senkuu has developed a grand scheme—to launch the complete revival of civilization with science. Taiju's brawn and Senkuu's brains combine to forge a formidable partnership, and they soon uncover a method to revive those petrified</span></div>
+          <div class="slide-btns">
+             <a role="button" rel="next" title="Watch DrStone New World" class="slide-btn watch-now-btn" href="/DrStoneNewWorld/Watch-Now/?ep=1&aud=eng">
+                <svg xmlns="http://www.w3.org/2000/svg" class="play-svg" enable-background="new 0 0 100 100" viewBox="0 0 100 100">
+                   <switch>
+                      <g>
+                         <path d="M5273.1,2400.1v-2c0-2.8-5-4-9.7-4s-9.7,1.3-9.7,4v2c0,1.8,0.7,3.6,2,4.9l5,4.9c0.3,0.3,0.4,0.6,0.4,1v6.4c0,0.4,0.2,0.7,0.6,0.8l2.9,0.9c0.5,0.1,1-0.2,1-0.8v-7.2c0-0.4,0.2-0.7,0.4-1l5.1-5C5272.4,2403.7,5273.1,2401.9,5273.1,2400.1zM5263.4,2400c-4.8,0-7.4-1.3-7.5-1.8v0c0.1-0.5,2.7-1.8,7.5-1.8c4.8,0,7.3,1.3,7.5,1.8C5270.7,2398.7,5268.2,2400,5263.4,2400z"/>
+                         <path d="M5268.4 2410.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1 0-.6-.4-1-1-1H5268.4zM5272.7 2413.7h-4.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1C5273.7 2414.1 5273.3 2413.7 5272.7 2413.7zM5272.7 2417h-4.3c-.6 0-1 .4-1 1 0 .6.4 1 1 1h4.3c.6 0 1-.4 1-1C5273.7 2417.5 5273.3 2417 5272.7 2417zM50 2.5C23.8 2.5 2.5 23.8 2.5 50c0 26.2 21.3 47.5 47.5 47.5 26.2 0 47.5-21.3 47.5-47.5C97.5 23.8 76.2 2.5 50 2.5zM67.2 52.8L41.6 69.8c-2.2 1.5-5.1-.1-5.1-2.8V32.9c0-2.6 2.9-4.2 5.1-2.8l25.6 17.1C69.2 48.6 69.2 51.4 67.2 52.8z"/>
+                      </g>
+                   </switch>
+                </svg>
+                Watch Now
+              </a>
+             <a role="button" rel="next" title="Dr Stone" class="slide-btn details-btn" href="/DrStoneNewWorld/">
+                Details
+                <svg class="svg-icon-on-slide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,0.8)" id="left-arrow">
+                   <path d="m8.5 12.8 5.7 5.6c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4l-4.9-5 4.9-5c.4-.4.4-1 0-1.4-.2-.2-.4-.3-.7-.3-.3 0-.5.1-.7.3l-5.7 5.6c-.4.5-.4 1.1 0 1.6 0-.1 0-.1 0 0z"></path>
+                </svg>
+              </a>
+          </div>
+          <div class="updated-time-on-slide">
+             <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-clk-on-slider" fill="rgba(255,255,255,0.7)" viewBox="0 0 512 512">
+                <path d="M256 512C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256s-114.6 256-256 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+             </svg>
+             <span class="small-text-on-slider">Updated on 15/06/2023</span>
+          </div>
+       </div>
+      </div>
+      </div>
+    <!-- <div class="slideshow-pagination"></div> -->
+    <div class="slider-dots">
+      <div class="slider-dot"></div>
+      <div class="slider-dot"></div>
+      <div class="slider-dot"></div>
+      <div class="slider-dot"></div>
+      <div class="slider-dot"></div>
+      <div class="slider-dot"></div>
+      <div class="slider-dot"></div>
+      <div class="slider-dot"></div>
+    </div>
+    <div class="slideshow-navigation">
+        <div class="slideshow-navigation-button prev"><span class="fas fa-chevron-left"></span></div>
+        <div class="slideshow-navigation-button next"><span class="fas fa-chevron-right"></span></div>
+    </div>
+    
+  </div>
+  </div>
+  
+</section>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+<script  src="./script.js"></script>
+<!-- <script src="https://vivek0018.github.io/Files.Animerulz/scripts/slider.js"></script> -->
+</body>
+</html>
